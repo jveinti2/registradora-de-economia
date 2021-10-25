@@ -11,35 +11,30 @@
 </head>
 <body>
 <h1>Registradora de economia</h1>
+
 <form id="form">
     <div>
-    <label for="">
-        tipo de transaccion
-        <input type="radio" name="typeTransaccion">Ingreso
-        <input type="radio" name="typeTransaccion">Egreso
+        Tipo de transaccion
+        <input id="ingreso" name="ingreso" type="radio">
+        <label for="ingreso">Ingreso</label>
+        <input id="egreso" name="egreso" type="radio">
+        <label for="egreso">Egreso</label>   
     </div>
-        </label>
     <div>
-     <label for="descripcion">
-         Descripción
-         <input type="text" id="descripcion">
-     </label>
+     <label for="descripcion">Descripción</label>
+     <input id="descripcion" name="descripcion" type="text">
     </div>       
     <div>
-    <label for="monto">
-        Monto
-        <input type="text" id="monto">
-    </label>
+        <label for="monto">Monto</label>
+        <input id="monto" name="monto" type="number">
     </div>
     <div>
-    <label for="categoria">
-        Categoria
-        <input type="text" id="categoria">
-    </label>
+        <label for="categoria">Categoria</label>
+        <input id="categoria" name="categoria" type="text">
     </div>
-        <label for="/">
-            <button>Añadir</button>
-        </label>
+    <div>
+        <button class="btn">Añadir</button>
+    </div>
 </form>
 
 <div id="container-table">
