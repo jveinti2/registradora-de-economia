@@ -30,10 +30,6 @@ h1 {
     border: none;
 
 }
-
-#container-table {
-    margin: 30px;
-}
 .btn {
     margin: 10px;
     padding: 5px 15px;
@@ -41,4 +37,13 @@ h1 {
     border-radius: 3px;
     font-size: 16px;
     
+}
+
+.tabletFormat table {
+    margin: 0 auto;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #fff;
 }
