@@ -15,9 +15,9 @@
 <form id="form">
     <div>
         Tipo de transaccion
-        <input id="ingreso" name="ingreso" type="radio">
+        <input id="ingreso" name="tipo" type="radio" value="ingreso">
         <label for="ingreso">Ingreso</label>
-        <input id="egreso" name="egreso" type="radio">
+        <input id="egreso" name="tipo" type="radio" value="egreso">
         <label for="egreso">Egreso</label>   
     </div>
     <div>
@@ -38,19 +38,16 @@
 </form>
 
 <div class="tabletFormat">
-    <table>
+    <table id="tabla_transacciones">
         <tr>
             <th>tipo</th>
             <th>Descripción</th>
             <th>Monto</th>
             <th>Categoria</th>
         </tr>
-        <tr>
-            <td>vacio</td>
-            <td>vacio</td>
-            <td>vacio</td>
-            <td>vacio</td>
-        </tr>
+        
+
+        
     </table>
 </div>
 
