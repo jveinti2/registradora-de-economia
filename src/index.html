@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Registradora de economia</title>
-</head>
-<body>
-<h1>Registradora de economia</h1>
+  </head>
+  <body>
+    <h1>Registradora de economia</h1>
 
-<form id="form">
-    <div>
+    <form id="form">
+      <div>
         Tipo de transaccion
-        <input id="ingreso" name="tipo" type="radio" value="ingreso">
+        <input id="ingreso" name="tipo" type="radio" value="ingreso" required/>
         <label for="ingreso">Ingreso</label>
-        <input id="egreso" name="tipo" type="radio" value="egreso">
-        <label for="egreso">Egreso</label>   
-    </div>
-    <div>
-     <label for="descripcion">Descripción</label>
-     <input id="descripcion" name="descripcion" type="text">
-    </div>       
-    <div>
+        <input id="egreso" name="tipo" type="radio" value="egreso" required/>
+        <label for="egreso">Egreso</label>
+      </div>
+      <div>
+        <label for="descripcion">Descripción</label>
+        <input id="descripcion" name="descripcion" type="text" required/>
+      </div>
+      <div>
         <label for="monto">Monto</label>
-        <input id="monto" name="monto" type="number">
-    </div>
-    <div>
+        <input id="monto" name="monto" type="number" required/>
+      </div>
+      <div>
         <label for="categoria">Categoria</label>
-        <input id="categoria" name="categoria" type="text">
-    </div>
-    <div>
+        <input id="categoria" name="categoria" type="text" required/>
+      </div>
+      <div>
         <button class="btn">Añadir</button>
-    </div>
-</form>
+      </div>
+    </form>
 
-<div class="tabletFormat">
-    <table id="tabla_transacciones">
+    <div class="tabletFormat">
+      <table id="tabla_transacciones">
         <tr>
-            <th>tipo</th>
-            <th>Descripción</th>
-            <th>Monto</th>
-            <th>Categoria</th>
+          <th>tipo</th>
+          <th>Descripción</th>
+          <th>Monto</th>
+          <th>Categoria</th>
         </tr>
-        
-
-        
-    </table>
-</div>
-
-</body>
-<script src="../src/main.js"></script>
+      </table>
+    </div>
+  </body>
+  <script src="../src/main.js"></script>
 </html>
